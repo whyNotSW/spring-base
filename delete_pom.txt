@@ -1,0 +1,52 @@
+		<!-- mysql 라이브러리
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.35</version>
+        </dependency> -->
+        
+		
+		<!-- log4j 없어도 되는 부분? 확인 필요. 메일 및 기타 로그 찍히는것 같음.
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.15</version>
+			<exclusions>
+				<exclusion>
+					<groupId>javax.mail</groupId>
+					<artifactId>mail</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>javax.jms</groupId>
+					<artifactId>jms</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>com.sun.jdmk</groupId>
+					<artifactId>jmxtools</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>com.sun.jmx</groupId>
+					<artifactId>jmxri</artifactId>
+				</exclusion>
+			</exclusions>
+			<scope>runtime</scope>
+		</dependency>
+		-->
+		
+		<!-- whynot : javax.mail 메일을 사용하기 위한 라이브러리 -->
+		<!-- 
+		<dependency>
+			<groupId>javax.mail</groupId>
+			<artifactId>mail</artifactId>
+			<version>1.4.7</version>
+		</dependency>
+		
+		spring-context-support : http://toby.epril.com/?p=623 참고
+			요약 : "Context Support는 애플리케이션 컨텍스트 컨테이너에서 사용되어지지만
+				자주 사용되지 않는 부가적인 기능들을 분리해 놓은 것이다.
+				캐쉬, 메일, 스케줄링, UI와 관련된 기능들이 포함되어 있다."
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context-support</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency> -->

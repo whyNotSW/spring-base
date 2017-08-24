@@ -1,0 +1,70 @@
+2017.07.10. 14:46 // whyNot 개인 웹페이지 만들기 시작.
+
+<Note00>
+수정사항 : (파일명), 내용
+Ctrl+F(주석, 그전 파일 내용등 찾기) : 찾을 키워드
+기타 : ..
+
+<Note01>
+수정사항 : pom.xml, 설치기본 -> 버전업
+Ctrl+F : whyNot 기본 설정 변경
+출처: http://pentode.tistory.com/69 [쉬고 싶은 개발자]
+
+<Note02>
+수정사항 : whyNot/src/main/webapp/WEB-INF/web.xml,
+수정내용 : version="2.5" -> 3.0 , web-app_2_5.xsd -> 3_0.xsd
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+수정 후 
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+
+<Note03>
+수정 사항 : project폴더 우클릭 -> Properties
+수정 내용 :
+- 프로젝트 오른쪽 버튼 클릭 -> Properties -> Java Build Path -> Libraries 에서 JavaSE1.6을 1.8로 변경
+	(Add Library -> JRE System Library -> 1.8
+	Remove -> 1.6버전 제거
+
+- 프로젝트 오른쪽 버튼 클릭 -> Properties -> Java Compiler
+	설정에서 Compiler compliance level 을 1.8로 지정
+
+- 프로젝트 오른쪽 버튼 클릭 -> Properties -> Project Facets
+	Dynamic Web Module 을 3.0 으로, java는 1.8로 설정
+
+- 프로젝트 오른쪽 버튼 클릭 -> Maven -> Update Project
+	선택해서 설정 내용을 적용
+	
+	
+<Note04>
+수정 사항 : pom.xml, 필요 항목 추가
+ - 오라클 드라이버 메이븐 설정하기
+	오라클 드라이버 메이븐 설정시 repository를 별도로 지정해주어야 한다.
+	지정해주지 않으면 Missing artifact ... 오류 발생
+	출처: http://appsnuri.tistory.com/112 [이야기앱 세상]
+
+<Note05>
+
+
+
+
+
+<Note06>
+하나씩 만들어보기. //
+
+<Note07>
+수정 사항 : logging
+
+
+
+
+<Note99> 
+Mail 보내기 기능.
+추가기능이라 일단 보류함..
+핵심글1: https://gs.saro.me/#!m=elec&jn=820
+핵심글2: http://aircook.tistory.com/entry/Spring%EC%9D%84-%EC%9D%B4%EC%9A%A9%ED%95%B4%EC%84%9C-%EB%A9%94%EC%9D%BC-%EB%B3%B4%EB%82%B4%EA%B8%B0
+참고글1 : http://noviceany.tistory.com/61
+참고글2 : https://stackoverflow.com/questions/22020533/javamail-api-from-maven
+
